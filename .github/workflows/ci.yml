@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Install dependencies
 
 on:
   pull_request:
@@ -23,5 +23,5 @@ jobs:
 
       - name: Install dependencies and run tests
         run: |
-          npm install
+          npm ci
           npm run ci:test
